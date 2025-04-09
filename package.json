@@ -1,0 +1,39 @@
+{
+  "name": "parcial_2025_04_08_api-s",
+  "version": "1.0.0",
+  "description": "API Compañia Producto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelAlfonso1723/Parcial_2025_04_08_API-s.git"
+  },
+  "keywords": [
+    "API",
+    "nodejs",
+    "express",
+    "swagger",
+    "mongodb"
+  ],
+  "author": "Miguel Alfonso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelAlfonso1723/Parcial_2025_04_08_API-s/issues"
+  },
+  "homepage": "https://github.com/MiguelAlfonso1723/Parcial_2025_04_08_API-s#readme",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
