@@ -43,6 +43,10 @@ const routes = express.Router()
  *           type: string
  *           description: Categoría principal del producto
  *           example: Electrónica
+ *         numberCategory:
+ *           type: integer
+ *           description: Número de categoría del producto (1 = Tecnologia, 2 = Comida, 3 = Automovil, 4 = Ropa)
+ *           example: 1
  *         price:
  *           type: number
  *           format: float
@@ -175,6 +179,7 @@ const routes = express.Router()
  *                       name: Q-Phone Pro
  *                       description: Smartphone con procesador cuántico
  *                       category: Electrónica
+ *                       numberCategory: 1
  *                       price: 1299.99
  *                       stock: 4500
  *                       __t: Electronics
@@ -191,6 +196,7 @@ const routes = express.Router()
  *                       name: Barrita Energética
  *                       description: Barrita con 20g de proteína vegana
  *                       category: Snacks
+ *                       numberCategory: 2
  *                       price: 2.99
  *                       stock: 25000
  *                       __t: Food
@@ -209,6 +215,7 @@ const routes = express.Router()
  *                       name: Eco-Sedan 2024
  *                       description: Vehículo eléctrico de alto rendimiento
  *                       category: Automóvil
+ *                       numberCategory: 3
  *                       price: 45900.00
  *                       stock: 350
  *                       __t: Automotive
@@ -229,6 +236,7 @@ const routes = express.Router()
  *                       name: Adidas sport-Tshirt
  *                       description: Camiseta Deportiva
  *                       category: Prenda de Vestir
+ *                       numberCategory: 4
  *                       price: 45900.00
  *                       stock: 350
  *                       __t: Clothing
@@ -246,6 +254,7 @@ const routes = express.Router()
  *                       name: Q-Phone Pro
  *                       description: Smartphone con procesador cuántico
  *                       category: Electrónica
+ *                       numberCategory: 1
  *                       price: 1299.99
  *                       stock: 4500
  *                       __t: Electronics
@@ -258,6 +267,7 @@ const routes = express.Router()
  *                       name: Barrita Energética
  *                       description: Barrita con 20g de proteína vegana
  *                       category: Snacks
+ *                       numberCategory: 2
  *                       price: 2.99
  *                       stock: 25000
  *                       __t: Food
@@ -272,6 +282,7 @@ const routes = express.Router()
  *                       name: Eco-Sedan 2024
  *                       description: Vehículo eléctrico de alto rendimiento
  *                       category: Automóvil
+ *                       numberCategory: 3
  *                       price: 45900.00
  *                       stock: 350
  *                       __t: Automotive
@@ -288,6 +299,7 @@ const routes = express.Router()
  *                       name: Adidas sport-Tshirt
  *                       description: Camiseta Deportiva
  *                       category: Prenda de Vestir
+ *                       numberCategory: 4
  *                       price: 45900.00
  *                       stock: 350
  *                       __t: Clothing
@@ -373,6 +385,7 @@ routes.get('/', getAll)
  *                                        name: Q-Phone Pro
  *                                        description: Smartphone con procesador cuántico
  *                                        category: Electrónica
+ *                                        numberCategory: 1
  *                                        price: 1299.99
  *                                        stock: 4500
  *                                        __t: Electronics
@@ -389,6 +402,7 @@ routes.get('/', getAll)
  *                                        name: Barrita Energética
  *                                        description: Barrita con 20g de proteína vegana
  *                                        category: Snacks
+ *                                        numberCategory: 2
  *                                        price: 2.99
  *                                        stock: 25000
  *                                        __t: Food
@@ -407,6 +421,7 @@ routes.get('/', getAll)
  *                                        name: Eco-Sedan 2024
  *                                        description: Vehículo eléctrico de alto rendimiento
  *                                        category: Automóvil
+ *                                        numberCategory: 3
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Automotive
@@ -427,6 +442,7 @@ routes.get('/', getAll)
  *                                        name: Adidas sport-Tshirt
  *                                        description: Camiseta Deportiva
  *                                        category: Prenda de Vestir
+ *                                        numberCategory: 4
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Clothing
@@ -474,7 +490,7 @@ routes.get('/:id', getById)
 /**
  * @swagger
  * /:
- * /product/
+ * /product/:
  *  post:
  *      tags: [Product Controller]
  *      summary: Guardar Producto
@@ -504,6 +520,7 @@ routes.get('/:id', getById)
  *                                  name: Q-Phone Pro
  *                                  description: Smartphone con procesador cuántico
  *                                  category: Electrónica
+ *                                  numberCategory: 1
  *                                  price: 1299.99
  *                                  stock: 4500
  *                                  features: [Pantalla 6.7\" AMOLED, 256GB almacenamiento]
@@ -515,6 +532,7 @@ routes.get('/:id', getById)
  *                                  name: Barrita Energética
  *                                  description: Barrita con 20g de proteína vegana
  *                                  category: Snacks
+ *                                  numberCategory: 2
  *                                  price: 2.99
  *                                  stock: 25000
  *                                  ingredients: [Proteína de guisante, Dátiles, Almendras]
@@ -528,6 +546,7 @@ routes.get('/:id', getById)
  *                                  name: Eco-Sedan 2024
  *                                  description: Vehículo eléctrico de alto rendimiento
  *                                  category: Automóvil
+ *                                  numberCategory: 3
  *                                  price: 45900.00
  *                                  stock: 350
  *                                  specs:
@@ -543,6 +562,7 @@ routes.get('/:id', getById)
  *                                  name: Adidas sport-Tshirt
  *                                  description: Camiseta Deportiva
  *                                  category: Prenda de Vestir
+ *                                  numberCategory: 4
  *                                  price: 45900.00
  *                                  stock: 350
  *                                  sizesAvaiable: [S, M, L, XL]
@@ -577,6 +597,7 @@ routes.get('/:id', getById)
  *                                        name: Q-Phone Pro
  *                                        description: Smartphone con procesador cuántico
  *                                        category: Electrónica
+ *                                        numberCategory: 1
  *                                        price: 1299.99
  *                                        stock: 4500
  *                                        __t: Electronics
@@ -593,6 +614,7 @@ routes.get('/:id', getById)
  *                                        name: Barrita Energética
  *                                        description: Barrita con 20g de proteína vegana
  *                                        category: Snacks
+ *                                        numberCategory: 2
  *                                        price: 2.99
  *                                        stock: 25000
  *                                        __t: Food
@@ -611,6 +633,7 @@ routes.get('/:id', getById)
  *                                        name: Eco-Sedan 2024
  *                                        description: Vehículo eléctrico de alto rendimiento
  *                                        category: Automóvil
+ *                                        numberCategory: 3
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Automotive
@@ -631,6 +654,7 @@ routes.get('/:id', getById)
  *                                        name: Adidas sport-Tshirt
  *                                        description: Camiseta Deportiva
  *                                        category: Prenda de Vestir
+ *                                        numberCategory: 4
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Clothing
@@ -798,6 +822,7 @@ routes.post('/', save)
  *                                        name: Q-Phone Pro
  *                                        description: Smartphone con procesador cuántico
  *                                        category: Electrónica
+ *                                        numberCategory: 1
  *                                        price: 1299.99
  *                                        stock: 4500
  *                                        __t: Electronics
@@ -814,6 +839,7 @@ routes.post('/', save)
  *                                        name: Barrita Energética
  *                                        description: Barrita con 20g de proteína vegana
  *                                        category: Snacks
+ *                                        numberCategory: 2
  *                                        price: 2.99
  *                                        stock: 25000
  *                                        __t: Food
@@ -832,6 +858,7 @@ routes.post('/', save)
  *                                        name: Eco-Sedan 2024
  *                                        description: Vehículo eléctrico de alto rendimiento
  *                                        category: Automóvil
+ *                                        numberCategory: 3
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Automotive
@@ -852,6 +879,7 @@ routes.post('/', save)
  *                                        name: Adidas sport-Tshirt
  *                                        description: Camiseta Deportiva
  *                                        category: Prenda de Vestir
+ *                                        numberCategory: 4
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Clothing
@@ -1060,6 +1088,7 @@ routes.delete('/:id', eliminate)
  *                                        name: Q-Phone Pro
  *                                        description: Smartphone con procesador cuántico
  *                                        category: Electrónica
+ *                                        numberCategory: 1
  *                                        price: 1299.99
  *                                        stock: 4500
  *                                        __t: Electronics
@@ -1076,6 +1105,7 @@ routes.delete('/:id', eliminate)
  *                                        name: Barrita Energética
  *                                        description: Barrita con 20g de proteína vegana
  *                                        category: Snacks
+ *                                        numberCategory: 2
  *                                        price: 2.99
  *                                        stock: 25000
  *                                        __t: Food
@@ -1094,6 +1124,7 @@ routes.delete('/:id', eliminate)
  *                                        name: Eco-Sedan 2024
  *                                        description: Vehículo eléctrico de alto rendimiento
  *                                        category: Automóvil
+ *                                        numberCategory: 3
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Automotive
@@ -1114,6 +1145,7 @@ routes.delete('/:id', eliminate)
  *                                        name: Adidas sport-Tshirt
  *                                        description: Camiseta Deportiva
  *                                        category: Prenda de Vestir
+ *                                        numberCategory: 4
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Clothing
@@ -1233,6 +1265,7 @@ routes.put('/provider/:id', providerProducts)
  *                                        name: Q-Phone Pro
  *                                        description: Smartphone con procesador cuántico
  *                                        category: Electrónica
+ *                                        numberCategory: 1
  *                                        price: 1299.99
  *                                        stock: 4500
  *                                        __t: Electronics
@@ -1249,6 +1282,7 @@ routes.put('/provider/:id', providerProducts)
  *                                        name: Barrita Energética
  *                                        description: Barrita con 20g de proteína vegana
  *                                        category: Snacks
+ *                                        numberCategory: 2
  *                                        price: 2.99
  *                                        stock: 25000
  *                                        __t: Food
@@ -1267,6 +1301,7 @@ routes.put('/provider/:id', providerProducts)
  *                                        name: Eco-Sedan 2024
  *                                        description: Vehículo eléctrico de alto rendimiento
  *                                        category: Automóvil
+ *                                        numberCategory: 3
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Automotive
@@ -1287,6 +1322,7 @@ routes.put('/provider/:id', providerProducts)
  *                                        name: Adidas sport-Tshirt
  *                                        description: Camiseta Deportiva
  *                                        category: Prenda de Vestir
+ *                                        numberCategory: 4
  *                                        price: 45900.00
  *                                        stock: 350
  *                                        __t: Clothing
@@ -1342,6 +1378,21 @@ routes.put('/provider/:id', providerProducts)
  *                              type: string
  *                              description: Indica que error se presento
  *                              example: ID Company Not Found        
+ *         '400':
+ *              description: El servidor no pudo Restar lo solicitado
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: object
+ *                          properties:
+ *                            state:
+ *                              type: boolean
+ *                              description: Indica si se encontro el ID o no
+ *                              example: false     
+ *                            message:
+ *                              type: string
+ *                              description: Indica que error se presento
+ *                              example: Stock is less than 5
  *                              
  *                               
  *                                               
