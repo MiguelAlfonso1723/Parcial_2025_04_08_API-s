@@ -25,7 +25,7 @@ const swaggerDefinition = {
         description: "Gestión y administración de productos pertenecientes la compañía"
     }],
     servers:[{
-        url: 'http://localhost:3000',
+        url: 'https://parcial-2025-04-08-api-s.onrender.com',
         description: 'Development API Products'
     }],
     components: {
