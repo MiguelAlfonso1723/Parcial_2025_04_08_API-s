@@ -3,7 +3,7 @@ Parcial API'S de la materia electiva II desarrollo web.
 
 # ProductAPI
 Taller de una API RESTFULL para gestionar compañías 📈 y productos varios 🎁  
-Hecho por: 
+Hecho por:   
 Miguel Angel Alfonso Saavedra - 202012145 👨🏻‍💻    
 Edwar Fernando Ramirez Gallo - 202021451 📄  
 
