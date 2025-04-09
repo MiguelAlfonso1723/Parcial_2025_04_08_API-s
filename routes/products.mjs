@@ -495,13 +495,6 @@ routes.get('/:id', getById)
  *      tags: [Product Controller]
  *      summary: Guardar Producto
  *      description: Guardar un producto de una compañia
- *      parameters:
- *         -    in: path
- *              name: id
- *              schema:
- *                  type: string
- *              required: true
- *              description: Identificador de la compañia en la BD a la cual se le va a agregar el producto
  *      requestBody:
  *          description: Crea un nuevo producto
  *          required: true
