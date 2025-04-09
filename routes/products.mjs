@@ -474,7 +474,7 @@ routes.get('/:id', getById)
 /**
  * @swagger
  * /:
- * /product/{id}:
+ * /product/
  *  post:
  *      tags: [Product Controller]
  *      summary: Guardar Producto
