@@ -7,7 +7,7 @@ Hecho por:
 Miguel Angel Alfonso Saavedra - 202012145 👨🏻‍💻    
 Edwar Fernando Ramirez Gallo - 202021451 📄  
 
-Link del despliegue en nube: https://parcial-2025-04-08-api-s.onrender.com 💻  
+Link del despliegue en nube: https://parcial-2025-04-08-api-s.onrender.com/docs 💻  
 
 # Información Adicional
 Para interactuar con la API se uso la UI de swagger.  
@@ -109,11 +109,11 @@ Textil:
 
 
 ### End - Points (Nube)
-- https://apinodejs-2h6b.onrender.com/product - GET. Recupera todos los Productos
-- https://apinodejs-2h6b.onrender.com/product/:id - GET. Busca por ID
-- https://apinodejs-2h6b.onrender.com/product/ - POST. Adiciona un nuevo registro
-- https://apinodejs-2h6b.onrender.com/product/:id - PUT. Actualiza un registro
-- https://apinodejs-2h6b.onrender.com/product/:id - DELETE. Elimina un regsitro
+- https://parcial-2025-04-08-api-s.onrender.com/product - GET. Recupera todos los Productos
+- https://parcial-2025-04-08-api-s.onrender.com/product/:id - GET. Busca por ID
+- https://parcial-2025-04-08-api-s.onrender.com/product/ - POST. Adiciona un nuevo registro
+- https://parcial-2025-04-08-api-s.onrender.com/product/:id - PUT. Actualiza un registro
+- https://parcial-2025-04-08-api-s.onrender.com/product/:id - DELETE. Elimina un regsitro
 
 ## Usuarios
 Para poder realizar solicitudes a la API, primero se tiene que crear un usuario y despues loggearse.  
@@ -130,7 +130,7 @@ Para iniciar usuario se necesita un correo y una contraseña ya existentes. Al i
 ```
 #### End - Points (Locales y Nube)
 - http://127.0.0.1:3000/signin/ - POST. Iniciar Sesión (obtención del Token)
-- https://apinodejs-2h6b.onrender.com/signin/ - POST. Iniciar Sesión (obtención del Token)
+- https://parcial-2025-04-08-api-s.onrender.com/signin/ - POST. Iniciar Sesión (obtención del Token)
 
 
 
